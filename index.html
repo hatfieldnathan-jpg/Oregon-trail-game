@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Oregon Trail Game</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+    <header>
+        <h1>The Oregon Trail Adventure</h1>
+    </header>
+
+    <div id="game-container">
+        <canvas id="gameCanvas" width="600" height="300"></canvas>
+        
+        <div id="status-panel">
+            <h2>Wagon Status</h2>
+            <p>Day: <span id="dayDisplay">0</span></p>
+            <p>Distance Traveled: <span id="distanceDisplay">0</span> miles</p>
+            <p>Food: <span id="foodDisplay">0</span> lbs</p>
+            <p>Oxen: <span id="oxenDisplay">0</span></p>
+            <div id="characterStatus">Party members ready.</div>
+            <p id="gameStatus">Initializing...</p>
+        </div>
+
+        <div id="action-panel">
+            <p id="message">Welcome! Click Start to begin your journey.</p>
+            <div id="choices">
+                </div>
+        </div>
+    </div>
+    
+    <script src="game.js"></script> 
+</body>
+</html>
