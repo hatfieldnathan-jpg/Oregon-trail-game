@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#game-container {
+    background-color: #fff;
+    border: 2px solid #333;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#gameCanvas {
+    display: block;
+    margin-bottom: 10px;
+    border: 1px solid #111;
+}
+
+#status-panel, #action-panel {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+#choices button {
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+#choices button:hover {
+    background-color: #45a049;
+}
+
+/* Health Bar Styling */
+.character-status {
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
+
+.health-bar {
+    width: 100%;
+    background-color: #eee;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 10px;
+    margin-top: 2px;
+}
+
+.health-fill {
+    height: 100%;
+    transition: width 0.5s;
+}
